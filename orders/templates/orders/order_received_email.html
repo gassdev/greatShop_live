@@ -1,0 +1,12 @@
+{% autoescape off %}
+
+Hi {{order.full_name}},
+Thank you for your order.
+Review your order information below.
+
+Order Number: {{order.order_number}}
+Order date: {{order.created_at}}
+Payment method: {{order.payment.payment_method}}
+Transaction ID: {{order.payment}}
+
+{% endautoescape %}
